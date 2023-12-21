@@ -66,7 +66,16 @@ const config = {
                 id: 'laravel',
                 path: 'laravel',
                 routeBasePath: 'laravel',
-                sidebarPath: './sidebars.js',
+                sidebarPath: './laravelSidebars.js',
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'lazybox',
+                path: 'lazybox',
+                routeBasePath: 'lazybox',
+                sidebarPath: './lazyboxSidebars.js',
             },
         ],
     ],
@@ -90,10 +99,18 @@ const config = {
             label: 'Tutorial',
           },
             {
-                type: 'docSidebar',
+                to: '/laravel/intro',
                 sidebarId: 'laravelSidebar',
                 position: 'left',
                 label: 'Laravel',
+                activeBaseRegex: `/laravel/`,
+            },
+            {
+                to: '/lazybox/intro',
+                sidebarId: 'lazyboxSidebar',
+                position: 'left',
+                label: 'Lazybox',
+                activeBaseRegex: `/lazybox/`,
             },
 
           {to: '/blog', label: 'Blog', position: 'left'},
