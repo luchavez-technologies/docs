@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: Introduction
 ---
 
-# Lazybox
+# Lazybox (Devilbox Fork)
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
