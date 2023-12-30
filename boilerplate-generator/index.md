@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: Introduction
 ---
 
-# Lazybox
+# Boilerplate Generator for Laravel 8|9|10
 
 Let's discover **Docusaurus in less than 5 minutes**.
 

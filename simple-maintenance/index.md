@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: Introduction
 ---
 
-# Simple Files
+# Simple Maintenance for Laravel 8|9|10
 
 Let's discover **Docusaurus in less than 5 minutes**.
 

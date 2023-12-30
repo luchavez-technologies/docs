@@ -40,6 +40,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: "lazybox",
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -61,7 +62,34 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "simple-files",
+        id: "api_sdk_kit",
+        path: "api-sdk-kit",
+        routeBasePath: "api-sdk-kit",
+        sidebarPath: "./sidebars.js",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "aws_ses_bounce",
+        path: "aws-ses-bounce",
+        routeBasePath: "aws-ses-bounce",
+        sidebarPath: "./sidebars.js",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "boilerplate_generator",
+        path: "boilerplate-generator",
+        routeBasePath: "boilerplate-generator",
+        sidebarPath: "./sidebars.js",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "simple_files",
         path: "simple-files",
         routeBasePath: "simple-files",
         sidebarPath: "./sidebars.js",
@@ -70,9 +98,36 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "boilerplate-generator",
-        path: "boilerplate-generator",
-        routeBasePath: "boilerplate-generator",
+        id: "simple_maintenance",
+        path: "simple-maintenance",
+        routeBasePath: "simple-maintenance",
+        sidebarPath: "./sidebars.js",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "simple_secrets",
+        path: "simple-secrets",
+        routeBasePath: "simple-secrets",
+        sidebarPath: "./sidebars.js",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "starter_kit",
+        path: "starter-kit",
+        routeBasePath: "starter-kit",
+        sidebarPath: "./sidebars.js",
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "lazybox",
+        path: "lazybox",
+        routeBasePath: "lazybox",
         sidebarPath: "./sidebars.js",
       },
     ],
@@ -90,32 +145,34 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorial_sidebar",
-            position: "left",
-            label: "Tutorial",
-          },
-          {
-            type: "docSidebar",
-            docsPluginId: "simple-files",
-            sidebarId: "simple_files_sidebar",
-            position: "left",
-            label: "Simple Files",
-          },
-          {
-            type: "docSidebar",
-            docsPluginId: "boilerplate-generator",
-            sidebarId: "boilerplate_generator_sidebar",
-            position: "left",
-            label: "Boilerplate Generator",
-          },
           // {
-          //   to: "/simple-files/intro",
+          //   type: "docSidebar",
+          //   sidebarId: "lazybox_sidebar",
+          //   position: "left",
+          //   label: "LazyBox",
+          // },
+          // {
+          //   type: "docSidebar",
+          //   docsPluginId: "simple_files",
           //   sidebarId: "simple_files_sidebar",
           //   position: "left",
           //   label: "Simple Files",
           //   activeBaseRegex: `/simple-files/`,
+          // },
+          // {
+          //   type: "docSidebar",
+          //   docsPluginId: "boilerplate_generator",
+          //   sidebarId: "boilerplate_generator_sidebar",
+          //   position: "left",
+          //   label: "Boilerplate Generator",
+          //   activeBaseRegex: `/boilerplate-generator/`,
+          // },
+          // {
+          //   to: "/aws-ses-bounce/intro",
+          //   sidebarId: "aws_ses_bounce_sidebar",
+          //   position: "left",
+          //   label: "AWS SES Bounce",
+          //   activeBaseRegex: `/aws-ses-bounce/`,
           // },
           // {
           //   to: "/boilerplate-generator/intro",
@@ -124,20 +181,64 @@ const config = {
           //   label: "Boilerplate Generator",
           //   activeBaseRegex: `/boilerplate-generator/`,
           // },
+          // {
+          //   to: "/simple-files/intro",
+          //   sidebarId: "simple_files_sidebar",
+          //   position: "left",
+          //   label: "Simple Files",
+          //   activeBaseRegex: `/simple-files/`,
+          // },
+          // {
+          //   to: "/simple-maintenance/intro",
+          //   sidebarId: "simple_maintenance_sidebar",
+          //   position: "left",
+          //   label: "Simple Maintenance",
+          //   activeBaseRegex: `/simple-maintenance/`,
+          // },
+          // {
+          //   to: "/simple-secrets/intro",
+          //   sidebarId: "simple_secrets_sidebar",
+          //   position: "left",
+          //   label: "Simple Files",
+          //   activeBaseRegex: `/simple-secrets/`,
+          // },
+          // {
+          //   to: "/starter-kit/intro",
+          //   sidebarId: "starter_kit_sidebar",
+          //   position: "left",
+          //   label: "Starter Kit",
+          //   activeBaseRegex: `/starter-kit/`,
+          // },
 
           // { to: "/blog", label: "Blog", position: "left" },
+
+          // Version Dropdowns
           {
             type: "docsVersionDropdown",
-            docsPluginId: "simple-files",
+            docsPluginId: "aws_ses_bounce",
+            sidebarId: "aws_ses_bounce_sidebar",
+            position: "right",
+          },
+          {
+            type: "docsVersionDropdown",
+            docsPluginId: "boilerplate_generator",
+            sidebarId: "boilerplate_generator_sidebar",
+            position: "right",
+          },
+          {
+            type: "docsVersionDropdown",
+            docsPluginId: "simple_files",
             sidebarId: "simple_files_sidebar",
             position: "right",
           },
           {
             type: "docsVersionDropdown",
-            docsPluginId: "boilerplate-generator",
-            sidebarId: "boilerplate_generator_sidebar",
+            docsPluginId: "starter_kit",
+            sidebarId: "starter_kit_sidebar",
             position: "right",
           },
+
+          // Others
           {
             href: "https://github.com/luchavez-technologies",
             label: "GitHub",
