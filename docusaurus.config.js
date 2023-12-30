@@ -122,15 +122,6 @@ const config = {
         sidebarPath: "./sidebars.js",
       },
     ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "lazybox",
-        path: "lazybox",
-        routeBasePath: "lazybox",
-        sidebarPath: "./sidebars.js",
-      },
-    ],
   ],
 
   themeConfig:
@@ -215,6 +206,12 @@ const config = {
           // Version Dropdowns
           {
             type: "docsVersionDropdown",
+            docsPluginId: "api_sdk_kit",
+            sidebarId: "api_sdk_kit_sidebar",
+            position: "right",
+          },
+          {
+            type: "docsVersionDropdown",
             docsPluginId: "aws_ses_bounce",
             sidebarId: "aws_ses_bounce_sidebar",
             position: "right",
@@ -229,6 +226,18 @@ const config = {
             type: "docsVersionDropdown",
             docsPluginId: "simple_files",
             sidebarId: "simple_files_sidebar",
+            position: "right",
+          },
+          {
+            type: "docsVersionDropdown",
+            docsPluginId: "simple_maintenance",
+            sidebarId: "simple_maintenance_sidebar",
+            position: "right",
+          },
+          {
+            type: "docsVersionDropdown",
+            docsPluginId: "simple_secrets",
+            sidebarId: "simple_secrets_sidebar",
             position: "right",
           },
           {
